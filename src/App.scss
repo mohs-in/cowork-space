@@ -1,17 +1,27 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    --black-shade: #242424;
+    --white-shade: rgb(250, 245, 245);
+}
+
+// Nav bar (Header Component) ---------
+
 nav { 
-    background-color: #242424;
-    color: whitesmoke;
+    background-color: var(--black-shade);
+    color: var(--white-shade);
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
 }
 
 ul {
-    padding: 25px 25px;
-    margin-top: 0;
+    padding: 1.5em 1.5em;
     display: flex;
     list-style: none;
 }
@@ -21,50 +31,52 @@ ul {
 }
 
 .icon {
-    width: 25px;
+    width: 1.5em;
+    margin-left: .5em;
 }
 
-.logo {
-    font-size: 18px;
-    font-weight: 700;
-    margin-right: 10px;
-}
+// ---------
+
+// body (Title Component) ---------
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
-    margin: 30px 25px;
+    margin: 0.5em;
 }
 
-.caption {
-    margin: 0px 25px;
+// ---------
+
+// body (Hero Tiles) ---------
+
+.img-tile--caption {
+    display: flex;
+    margin: 10px 0;
     gap: 10px;
     justify-content: center;
 }
 
-.caption,
-.img-bg{
-    display: flex;
+.img-tile {
+    margin: 10%;
 }
 
-.item-banner {
-    color: whitesmoke;
-    padding: 5px 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.item {
+.img-tile--sec {
+    background-color: aqua;
     position: relative;
 }
 
-.item-banner,
-.btn {
+.img-tile--sec-banner {
+    color: whitesmoke;
+    padding: 5px 10px;
+    position: absolute;
+}
+
+.img-tile--sec-banner,
+.caption-btn {
     background-color: #cd6858;
 }
 
-.btn {
+.caption-btn {
     padding: 10px 15px;
     color: whitesmoke;
     font-weight: 700;
@@ -73,11 +85,17 @@ h1 {
     align-self: center;
 }
 
-.item-img {
+.img-tile--main-img {
     display: block;
+    width: 100%;
 }
 
-.img-bg {
+// ---------
+
+// footer (Footer Component) ---------
+
+.chat-icon {
+    display: flex;
     background-color: #dda15e;
     border-radius: 50%;
     height: 40px;
@@ -89,8 +107,9 @@ h1 {
     right: 6px;
 }
 
-.img {
+.chat-icon--img {
     width: 50%;
     margin: auto;
 }
 
+// ---------
