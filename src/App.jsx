@@ -1,9 +1,9 @@
 import React from 'react'
 import data from './data.js'
-import Hero from '../components/Hero.jsx'
-import Title from '../components/Title.jsx'
-import Header from '../components/Header.jsx'
-import Footer from '../components/Footer.jsx'
+import Hero from './components/Hero.jsx'
+import Title from './components/Title.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   const heroComp= data.map(heroComp => {
